@@ -1,0 +1,13 @@
+{
+    "role": {
+        "name": "role_with_grant#",
+        "schema_privileges": [
+            {
+                "privileges_with_grant_option": [
+                    "SELECT",
+                    "EXECUTE"
+                ]
+            }
+        ]
+    }
+}

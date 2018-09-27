@@ -1,0 +1,26 @@
+{
+    "hdi_MERCURY": {
+        "object_owner": {
+            "schema_roles": [
+                {
+                    "roles": [
+                        "role_with_grant#"
+                    ]
+                }
+            ]
+        },
+        "application_user": {
+            "schema_roles": [
+                {
+                    "roles": [
+                        "role_wo_grant"
+                    ]
+                }
+            ]
+        }
+    }
+}
+
+
+
+

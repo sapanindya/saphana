@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="VEN_SPFLI" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="VEN_SPFLI"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SPFLI">
+    <resourceUri>SPFLI</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="SPFLI">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="SPFLI" columnName="MANDT"/>
+    </attribute>
+    <attribute id="CARRID" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CARRID"/>
+      <keyMapping columnObjectName="SPFLI" columnName="CARRID"/>
+    </attribute>
+    <attribute id="CONNID" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CONNID"/>
+      <keyMapping columnObjectName="SPFLI" columnName="CONNID"/>
+    </attribute>
+    <attribute id="COUNTRYFR" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COUNTRYFR"/>
+      <keyMapping columnObjectName="SPFLI" columnName="COUNTRYFR"/>
+    </attribute>
+    <attribute id="CITYFROM" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CITYFROM"/>
+      <keyMapping columnObjectName="SPFLI" columnName="CITYFROM"/>
+    </attribute>
+    <attribute id="AIRPFROM" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AIRPFROM"/>
+      <keyMapping columnObjectName="SPFLI" columnName="AIRPFROM"/>
+    </attribute>
+    <attribute id="COUNTRYTO" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COUNTRYTO"/>
+      <keyMapping columnObjectName="SPFLI" columnName="COUNTRYTO"/>
+    </attribute>
+    <attribute id="CITYTO" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CITYTO"/>
+      <keyMapping columnObjectName="SPFLI" columnName="CITYTO"/>
+    </attribute>
+    <attribute id="AIRPTO" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AIRPTO"/>
+      <keyMapping columnObjectName="SPFLI" columnName="AIRPTO"/>
+    </attribute>
+    <attribute id="FLTIME" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FLTIME"/>
+      <keyMapping columnObjectName="SPFLI" columnName="FLTIME"/>
+    </attribute>
+    <attribute id="DEPTIME" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DEPTIME"/>
+      <keyMapping columnObjectName="SPFLI" columnName="DEPTIME"/>
+    </attribute>
+    <attribute id="ARRTIME" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ARRTIME"/>
+      <keyMapping columnObjectName="SPFLI" columnName="ARRTIME"/>
+    </attribute>
+    <attribute id="DISTANCE" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DISTANCE"/>
+      <keyMapping columnObjectName="SPFLI" columnName="DISTANCE"/>
+    </attribute>
+    <attribute id="DISTID" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DISTID"/>
+      <keyMapping columnObjectName="SPFLI" columnName="DISTID"/>
+    </attribute>
+    <attribute id="FLTYPE" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FLTYPE"/>
+      <keyMapping columnObjectName="SPFLI" columnName="FLTYPE"/>
+    </attribute>
+    <attribute id="PERIOD" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERIOD"/>
+      <keyMapping columnObjectName="SPFLI" columnName="PERIOD"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

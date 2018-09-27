@@ -1,0 +1,45 @@
+{
+  "SAIRPORT": {
+    "target": {
+      "object": "SAIRPORT",
+      "schema": "SFLIGHT",
+      "database": "HDB"
+    }
+  },
+  
+  "SBOOK": {
+    "target": {
+      "object": "SBOOK",
+      "schema": "SFLIGHT",
+      "database": "HDB"
+    }
+  } ,
+  
+  "SCARR": {
+    "target": {
+      "object": "SCARR",
+      "schema": "SFLIGHT",
+      "database": "HDB"
+    }
+  } ,
+  
+  
+  "STRAVELAG": {
+    "target": {
+      "object": "STRAVELAG",
+      "schema": "SFLIGHT",
+      "database": "HDB"
+    }
+  } ,
+  
+  "SPFLI": {
+    "target": {
+      "object": "SPFLI",
+      "schema": "SFLIGHT",
+      "database": "HDB"
+    }
+  } 
+  
+  
+  
+  }

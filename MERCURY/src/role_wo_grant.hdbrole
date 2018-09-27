@@ -1,0 +1,13 @@
+{
+    "role": {
+        "name": "role_wo_grant",
+        "schema_privileges": [
+            {
+                "privileges": [
+                    "SELECT",
+                    "EXECUTE"
+                ]
+            }
+        ]
+    }
+}

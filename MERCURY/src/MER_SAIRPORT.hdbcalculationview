@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="MER_SAIRPORT" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="MER_SAIRPORT"/>
+<localVariables>
+  <variable id="IP_AIRPORT_CODE" parameter="true">
+    <descriptions defaultDescription=""/>
+    <variableProperties datatype="NVARCHAR" length="3" scale="null" mandatory="false">
+      <valueDomain type="AttributeValue">
+        <externalLikeStructureName>SAIRPORT</externalLikeStructureName>
+        <externalLikeElementName>ID</externalLikeElementName>
+      </valueDomain>
+      <selection multiLine="true" type="Single"/>
+    </variableProperties>
+  </variable>
+</localVariables>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SAIRPORT">
+    <resourceUri>SAIRPORT</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="SAIRPORT" filterExpressionLanguage="COLUMN_ENGINE">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="SAIRPORT" columnName="MANDT"/>
+    </attribute>
+    <attribute id="ID" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ID"/>
+      <keyMapping columnObjectName="SAIRPORT" columnName="ID"/>
+    </attribute>
+    <attribute id="NAME" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME"/>
+      <maskingExpression>LEFT(&quot;NAME&quot;,1) || 'XXXXXXX'</maskingExpression>
+      <keyMapping columnObjectName="SAIRPORT" columnName="NAME"/>
+    </attribute>
+    <attribute id="TIME_ZONE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TIME_ZONE"/>
+      <keyMapping columnObjectName="SAIRPORT" columnName="TIME_ZONE"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+
+  <filter>&quot;ID&quot;=$$IP_AIRPORT_CODE$$</filter>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
